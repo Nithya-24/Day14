@@ -2,6 +2,9 @@ package linkedList;
 
 public class LinkedList {
 
+public Node head;
+public Node tail;
+
 /**
 * addNode - this method is created to add data to linedList
 *
@@ -104,5 +107,27 @@ public class LinkedList {
 			
 			return null;
 		}
+		
+		public void append(Node myNode){
+			Node head = null;
+			if (this.head == null) {
+			this.head = myNode;
+			} 
+			if (this.tail == null) {
+				this.tail = myNode;
+				} else {
+					Node tail = this.head;
+				
+					this.tail = myNode;
+					
+			}
+			
+			}
+		public Node deleteNodeFromStart(Node head) {
+			System.out.println("Deleted node from start : " + head.data);
+			head = head.next;
+			return head;
+			}
+		
 		
 }

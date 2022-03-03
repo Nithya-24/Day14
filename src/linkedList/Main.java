@@ -23,9 +23,10 @@ public class Main {
 		/*
 		* 2. Adding nodes to linkedList
 		*/
-		Node head = list.addNode(null, 70);
+		Node head = list.addNode(null, 56);
 		list.addNode(head, 30);
-		list.addNode(head, 56);
+		list.addNode(head, 30);
+		list.addNode(head, 70);
 		
 		/*
 		* 3. Printing linedList after adding nodes
