@@ -34,14 +34,21 @@ public class Main {
 		list.printLinkedList(head);
 		System.out.println();
 		
-		head = list.deleteNodeFromStart(head);
+		// head = list.deleteNodeFromStart(head);
 
 		/*
 		*Printing likedList after deleting node from start of the linkedlist
 		*/
-		list.printLinkedList(head);
+		// list.printLinkedList(head);
 		System.out.println();
+		
+		list.deleteNodeFromEnd(head);
 
+		/*
+		* 7. Printing linedList after deleting node from end of the linkedlist
+		*/
+		list.printLinkedList(head);
+		
 		
 	   
 	    

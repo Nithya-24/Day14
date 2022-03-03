@@ -129,5 +129,17 @@ public Node tail;
 			return head;
 			}
 		
+		public void deleteNodeFromEnd(Node head) {
+			Node pointer = head;
+			Node prev = null;
+
+			while (pointer.next != null) {
+			prev = pointer;
+			pointer = pointer.next;
+			}
+			System.out.println("Deleted node from end : " + pointer.data);
+			prev.next = null;
+			}
+		
 		
 }
