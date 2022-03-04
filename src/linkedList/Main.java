@@ -61,7 +61,14 @@ public class Main {
 		list.printLinkedList(head);
 		System.out.println();
 		
-	    
+		list.addAtSpecificPosition(40, 3);
+		
+		/*
+		*  linkedList after searching node from the linkedlist
+		*/
+		list.printLinkedList(head);
+		System.out.println();
+		
 
 	}
 	

@@ -99,7 +99,39 @@ public Node tail = null;
 		             System.out.println("Element is not present in the list");  
 		    }
 		
-				  
-		
+		/**
+		 * Adding my new Node to the specific position in tha Linked List
+		 * @param data - getting an New data to add in tha Linked List
+		 * @param position - accepting the New Node to add to a Specific position
+		 */
+			public void addAtSpecificPosition(int data, int position) {
+			Node newNode = new Node(data);
+			newNode.data = data;
+			newNode.next = null;
+
+			if (position == 1) {
+				newNode.next = head;
+				head = newNode;
+			} else {
+
+				Node currentNode = new Node(data);
+				currentNode = head;
+				for (int i = 1; i < position - 1; i++) {
+					if (currentNode != null) {
+						currentNode = currentNode.next;
+						
+					}
+					 System.out.println("New Element is inserted after 30");  
+				}
+
+				if (currentNode != null) {
+					newNode.next = currentNode.next;
+					currentNode.next = newNode;
+				} else {
+					System.out.print("\nThe previous node is null.");
+				}
+			}
+					  
+		}
 		
 }
