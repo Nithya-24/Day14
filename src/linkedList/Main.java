@@ -19,14 +19,18 @@ public class Main {
 		* 1. Creating Lined list
 		*/
 		LinkedList list = new LinkedList();
+		
 
 		/*
 		* 2. Adding nodes to linkedList
 		*/
-		Node head = list.addNode(null, 56);
-		list.addNode(head, 30);
-		list.addNode(head, 30);
-		list.addNode(head, 70);
+		Node head = list.addNode(56);
+		
+		list.addNode(30);
+		list.addNode(70);
+		
+		
+	
 		
 		/*
 		* 3. Printing linedList after adding nodes
@@ -42,15 +46,21 @@ public class Main {
 		// list.printLinkedList(head);
 		System.out.println();
 		
-		list.deleteNodeFromEnd(head);
+		// list.deleteNodeFromEnd(head);
 
 		/*
-		* 7. Printing linedList after deleting node from end of the linkedlist
+		*  linkedList after deleting node from end of the linkedlist
+		*/
+		// list.printLinkedList(head);
+		
+		list.searchOfNode(30);
+		
+		/*
+		*  linkedList after searching node from the linkedlist
 		*/
 		list.printLinkedList(head);
+		System.out.println();
 		
-		
-	   
 	    
 
 	}
