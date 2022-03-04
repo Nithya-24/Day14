@@ -77,6 +77,16 @@ public class Main {
 		list.printLinkedList(head);
 		System.out.println();
 		
+		System.out.println("Ascending Order of an LinkedList: ");
+		list.sortList();
+		
+		/*
+		*  linkedList after searching node from the linkedlist
+		*/
+		list.printLinkedList(head);
+		System.out.println();
+		
+		
 
 	}
 	
