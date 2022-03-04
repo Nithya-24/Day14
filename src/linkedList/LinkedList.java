@@ -121,6 +121,7 @@ public Node tail = null;
 						currentNode = currentNode.next;
 						
 					}
+					
 					 System.out.println("New Element is inserted after 30");  
 				}
 
@@ -133,5 +134,44 @@ public Node tail = null;
 			}
 					  
 		}
+			
+			 static int countOfNodes(Node head)
+			    {
+			        int count = 0;
+			        while (head != null) {
+			            head = head.next;
+			            count++;
+			        }
+			        return count;
+			    }
+			
+			static Node deleteMid(Node head)
+		    {
+		        // Base cases
+		        if (head == null)
+		            return null;
+		        if (head.next == null) {
+		            return null;
+		        }
+		        Node newNode = head;
+		 
+		        // Find the count of nodes
+		        int count = countOfNodes(head);
+		 
+		        // Find the middle node
+		        int mid = count / 2;
+		 
+		        // Delete the middle node
+		        while (mid-- > 1) {
+		            head = head.next;
+		        }
+		        
+		        System.out.println("Element is deleted");  
+		 
+		        // Delete the middle node
+		        head.next = head.next.next;
+		 
+		        return newNode;
+		    }
 		
 }

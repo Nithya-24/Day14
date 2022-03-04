@@ -69,6 +69,14 @@ public class Main {
 		list.printLinkedList(head);
 		System.out.println();
 		
+		LinkedList.deleteMid(head);
+		
+		/*
+		*  linkedList after searching node from the linkedlist
+		*/
+		list.printLinkedList(head);
+		System.out.println();
+		
 
 	}
 	
